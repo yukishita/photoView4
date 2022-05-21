@@ -39,7 +39,7 @@ class raspiCloudController( photoviewcontroller ):
                 self.photoView.displayPhoto( self.storePath + "/" + file )
 
                 """ 指定の時間 sleep """
-                time.sleep( self.mergeDuration )
+                time.sleep( self.showDuration )
 
                 self.fileManager.deleteActualFile( file )
             except:
