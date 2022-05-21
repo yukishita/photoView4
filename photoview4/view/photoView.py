@@ -10,12 +10,12 @@ class PhotoViewRaspiFbi( PhotoView ):
     def __init__(self) -> None:
         super().__init__()
         """ スプラッシュスクリーンの表示 """
-        self.displayPhoto( "resource/boot.jpg" )
+        self.displayPhoto( "./photoview4/resource/boot.jpg" )
 
     def displayPhoto( self, _fileName ):
         try:
             pass
-#            subprocess.Popen( [ "/usr/bin/fbi" , "-T", "1", "-d","/dev/fb0", "-a", _fileName ], shell=False )
+            subprocess.Popen( [ "/usr/bin/fbi" , "-T", "1", "-d","/dev/fb0", "-a", _fileName ], shell=False )
         except:
             raise ValueError("Viewer error")
 
