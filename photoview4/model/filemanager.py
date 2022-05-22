@@ -2,6 +2,7 @@ import subprocess
 import threading
 import random
 import os
+import time
 
 class FileManager(object):
     """ コンストラクタ """
@@ -157,6 +158,8 @@ class RcloneFileManager(FileManager):
     """ 実際のファイルを取得(スレッドで常に実行) """
     def initFileGet( self ):
         while True:
+            time.sleep( 1 )
+
             if( self.isStored ):
                 if( len(self.downloadedFile) < 5 ):
                     self.downloadedFile.append( self.getActualFile( self.getRandomFileName() ) )
