@@ -36,7 +36,7 @@ class raspiCloudController( photoviewcontroller ):
             try:
                 """ ファイルを表示する """
                 file = self.fileManager.getDownloadFile()
-                self.closeDisplay()
+                self.photoView.closeDisplay()
                 self.photoView.displayPhoto( self.storePath + "/" + file )
 
                 """ 指定の時間 sleep """
