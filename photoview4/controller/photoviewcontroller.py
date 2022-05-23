@@ -43,6 +43,7 @@ class raspiCloudController( photoviewcontroller ):
 
                 self.fileManager.deleteActualFile( file )
             except:
+                time.sleep(1)
                 pass
 
     def fileMerge( self ):
