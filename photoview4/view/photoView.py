@@ -14,8 +14,7 @@ class PhotoViewRaspiFbi( PhotoView ):
 
     def displayPhoto( self, _fileName ):
         try:
-            pass
-            subprocess.Popen( [ "/usr/bin/fbi" , "-T", "1", "-d","/dev/fb0", "-a", _fileName ], shell=False )
+            subprocess.Popen( [ "/usr/bin/fbi" , "-T", "1", "-d","/dev/fb0", "-a", _fileName ], shell=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL )
         except:
             raise ValueError("Viewer error")
 
