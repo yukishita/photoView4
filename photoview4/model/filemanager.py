@@ -100,16 +100,17 @@ class FileManager(object):
             delfile = self.storePath + "/" + _fileName
             os.remove( delfile )
 
-            """ ダウンロードリストを削除 """
-            index = self.downloadedFile.index(_fileName)
-            del self.downloadedFile[index]
-
-            """ ダウンロードしたファイルがなくなった """
-            if( len(self.downloadedFile) == 0 ):
-                self.isFileReady = False
-
         except:
+            """ 削除エラーが発生したときはリストのみ削除する """
             pass
+
+        """ ダウンロードリストを削除 """
+        index = self.downloadedFile.index(_fileName)
+        del self.downloadedFile[index]
+
+        """ ダウンロードしたファイルがなくなった """
+        if( len(self.downloadedFile) == 0 ):
+            self.isFileReady = False
 
 """ rclone の実装 """
 class RcloneFileManager(FileManager):
