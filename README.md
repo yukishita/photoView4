@@ -15,3 +15,6 @@ https://rclone.org
 
 ■ 詳細  
 [Raspberry Pi でクラウド対応フォトフレーム制作](https://snow-under.com/raspberry-pi-%e3%81%a7%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e5%af%be%e5%bf%9c%e3%83%95%e3%82%a9%e3%83%88%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e5%88%b6%e4%bd%9c/)
+
+■デモビデオ  
+[![](https://img.youtube.com/vi/VP7y_E34EJA/0.jpg)](https://www.youtube.com/watch?v=VP7y_E34EJA)
